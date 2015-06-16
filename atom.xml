@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-06-16T07:50:25.000Z</updated>
+  <updated>2015-06-16T09:08:26.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -20,8 +20,8 @@
     <link href="http://yoursite.com/2015/06/16/Legos-React/"/>
     <id>http://yoursite.com/2015/06/16/Legos-React/</id>
     <published>2015-06-16T07:45:32.000Z</published>
-    <updated>2015-06-16T07:50:25.000Z</updated>
-    <content type="html"><![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环境搭建完毕，亲测体验很ok，现在把使用文档丢出来：</p>
+    <updated>2015-06-16T09:08:26.000Z</updated>
+    <content type="html"><![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环境搭建完毕，亲测体验很ok，现在把使用文档丢出来：<br><a id="more"></a></p>
 <h4 id="legos增加react模块">legos增加react模块</h4><p>已经在公共模块增加react模块如下图：</p>
 <p><img src="http://st.midea.com/h5/pic/201506/react-module.png" alt="react模块"></p>
 <h4 id="我写的demo业务模块如下图：">我写的demo业务模块如下图：</h4><p><img src="http://st.midea.com/h5/pic/201506/react-demo.png" alt="react Demo"></p>
@@ -43,7 +43,8 @@
 <p>不要犹豫了，赶紧尝试一下，有任何问题请随时咨询<strong>罗德大神</strong>，妹子优先~~</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环]]>
+    <![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环境搭建完毕，亲测体验很ok，现在把使用文档丢出来：<br>]]>
+    
     </summary>
     
       <category term="react" scheme="http://yoursite.com/tags/react/"/>
