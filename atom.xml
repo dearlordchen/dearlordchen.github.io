@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-06-15T11:40:31.000Z</updated>
+  <updated>2015-06-16T07:50:25.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -16,37 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2015/06/15/hello-world/"/>
-    <id>http://yoursite.com/2015/06/15/hello-world/</id>
-    <published>2015-06-15T11:40:31.000Z</published>
-    <updated>2015-06-15T11:40:31.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[Legos-React]]></title>
+    <link href="http://yoursite.com/2015/06/16/Legos-React/"/>
+    <id>http://yoursite.com/2015/06/16/Legos-React/</id>
+    <published>2015-06-16T07:45:32.000Z</published>
+    <updated>2015-06-16T07:50:25.000Z</updated>
+    <content type="html"><![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环境搭建完毕，亲测体验很ok，现在把使用文档丢出来：</p>
+<h4 id="legos增加react模块">legos增加react模块</h4><p>已经在公共模块增加react模块如下图：</p>
+<p><img src="http://st.midea.com/h5/pic/201506/react-module.png" alt="react模块"></p>
+<h4 id="我写的demo业务模块如下图：">我写的demo业务模块如下图：</h4><p><img src="http://st.midea.com/h5/pic/201506/react-demo.png" alt="react Demo"></p>
+<h4 id="调用react模块代码如下（跟其他公共模块没什么两样^_^）：">调用react模块代码如下（跟其他公共模块没什么两样^_^）：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="string">'test.react'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> _cacheThisModule_;</span><br><span class="line">    <span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react'</span>);</span><br><span class="line">    <span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'zepto'</span>);</span><br><span class="line"></span><br><span class="line">    exports.init = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">/**</span><br><span class="line">         * Created by lordchen on 15/5/18.</span><br><span class="line">         */</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> Timer = React.createClass(&#123;displayName: <span class="string">"Timer"</span>,</span><br><span class="line">            getInitialState: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> &#123;secondsElapsed: <span class="number">0</span>&#125;;</span><br><span class="line">            &#125;,</span><br><span class="line">            tick: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.setState(&#123;secondsElapsed: <span class="keyword">this</span>.state.secondsElapsed + <span class="number">1</span>&#125;);</span><br><span class="line">            &#125;,</span><br><span class="line">            componentDidMount: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.interval = setInterval(<span class="keyword">this</span>.tick, <span class="number">1000</span>);</span><br><span class="line">            &#125;,</span><br><span class="line">            componentWillUnmount: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                clearInterval(<span class="keyword">this</span>.interval);</span><br><span class="line">            &#125;,</span><br><span class="line">            render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line">                    React.createElement(<span class="string">"div"</span>, <span class="literal">null</span>, <span class="string">"Seconds Elapsed very fast: "</span>, <span class="keyword">this</span>.state.secondsElapsed)</span><br><span class="line">                    );</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        React.render(React.createElement(Timer, <span class="literal">null</span>), <span class="built_in">document</span>.body);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>恭喜大家，基于legos的一个酷酷的计时器react应用已经开发完成了</p>
+<p>但是了解react的人应该都知道上面这种不是基于<a href="http://segmentfault.com/a/1190000002646155" target="_blank" rel="external">JSX</a>的代码写起来太low了，而且html标签的优势也都消失殆尽了，需要把jsx模板转换的工具也集成进来，操作步骤如下：</p>
+<ol>
+<li>在static/js 目录下新建目录jsx</li>
+<li>下载安装<a href="https://nodejs.org/" target="_blank" rel="external">nodejs</a></li>
+<li><p>安装react-tools</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g react-tools</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置jsx自动编译(记得关注文件路径，要先进入你本机代码所在目录)</p>
+</li>
+</ol>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jsx -w ./jsx ./<span class="class"><span class="keyword">module</span></span></span><br></pre></td></tr></table></figure>
+<p><img src="http://st.midea.com/h5/pic/201506/jsxwatch.png" alt="jsxwatch"></p>
+<p>看到上面的截图，表示jsx已经在watch./jsx 目录下地文件修改，并且实时在module目录下生成一个同名的编译后的js文件，接下来应该怎么做，相信大家都懂了。</p>
+<p>不要犹豫了，赶紧尝试一下，有任何问题请随时咨询<strong>罗德大神</strong>，妹子优先~~</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    <![CDATA[<p>上周《永不止步的前端》分享之后，从同学们的反馈来看，普遍都觉得react很酷，很值得尝试，但是webpack+gulp的方案有点重，有点颠覆现在的开发模式，所以贴心的<strong>罗德大神</strong>连夜折腾了一个legos4+reactjs的方案，目前已经在开发环]]>
     </summary>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[hello]]></title>
-    <link href="http://yoursite.com/2015/06/15/hello/"/>
-    <id>http://yoursite.com/2015/06/15/hello/</id>
-    <published>2015-06-15T08:04:14.000Z</published>
-    <updated>2015-06-15T08:04:14.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
     
   </entry>
   
